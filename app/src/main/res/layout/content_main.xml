@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.stephenlightcap.stepcounter.view.MainActivity"
+    tools:showIn="@layout/activity_main"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+
+    <TextView
+        android:id="@+id/textview_current_steps"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="000000" />
+
+    <Button
+        android:id="@+id/button_add_current_steps"
+        style="@android:style/Widget.Material.Light.Button.Borderless.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:text="Add Steps" />
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.17" />
+</LinearLayout>

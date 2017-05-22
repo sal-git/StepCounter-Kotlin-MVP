@@ -11,12 +11,13 @@ import io.realm.RealmQuery
 /**
  * Created by Germex on 5/20/2017.
  */
-class MainPresenterImplementation(mainView: MainView, private val stepInteractorDB: StepInteractorDB) : MainPresenter, StepInteractorDB.OnFinishedListener {
+class MainPresenterImplementation(mainView: MainView, stepInteractorDB: StepInteractorDB) : MainPresenter, StepInteractorDB.OnFinishedListener {
     var mainView: MainView? = null
-        private set
+    var stepInteractorDB: StepInteractorDB? = null
 
     init {
         this.mainView = mainView
+        this.stepInteractorDB = stepInteractorDB
     }
 
 
